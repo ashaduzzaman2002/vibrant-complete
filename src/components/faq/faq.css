@@ -1,0 +1,104 @@
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+.faq-container {
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-item {
+    background-color: transparent !important;
+    overflow: hidden;
+    border: none;
+    border-radius: 5px !important;
+    border: 1px solid #D7D7D7 !important;
+    padding: 20px 25px;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    font-size: 1rem;
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    background-color: var(--bs-accordion-btn-bg);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+    padding-bottom: 15px;
+}
+
+
+.accordion-body {
+    padding: 0;
+    padding-top: 0.5rem;
+}
+
+.accordion-item .border-bottom {
+    border-color: #EEEEEE !important;
+}
+
+.accordion-button {
+    color: var(--black, #333) !important;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.accordion-body {
+    color: var(--black, #333);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.accordion-button::after {
+    margin-left: auto;
+    content: '+';
+    background-image: none;
+    color: #FFF;
+    padding-bottom: 1.5px;
+    background-color: #292d32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: none;
+    content: '-' !important;
+    font-size: 25px !important;
+    padding-bottom: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .accordion-button {
+        font-size: 1.1rem !important;
+        padding-bottom: 15px;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+    }
+}

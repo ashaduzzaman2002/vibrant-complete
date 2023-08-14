@@ -1,0 +1,179 @@
+.dapp-top {
+    background: #E7EFFF;
+    display: flex;
+    align-items: center;
+}
+
+.dapp-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dapp-top .icon {
+    background: #015FC9;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.dapp-top .dapp-card:first-child {
+    align-self: flex-start;
+}
+
+.dapp-top .icon svg {
+    width: 40px;
+}
+
+.dapp-top h2 {
+    color: var(--black, #333);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.dapp-top p {
+    color: var(--black, #333);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.dapp-bottom {
+    background: var(--white, #FFF);
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.07);
+}
+
+
+.dapp-bottom .images img {
+    height: 80%;
+    width: 100%;
+}
+
+.dapp-bottom .text-box h2 {
+    color: var(--blue, #015FC9);
+    font-family: "Spline Sans", sans-serif !important;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.dapp-bottom .text-box p {
+    color: #000;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about-list li {
+    list-style: none;
+    color: #000;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.dapp-images img {
+    width: 200px;
+}
+
+@media screen and (max-width: 1200px) {
+    .dapp-top .icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .dapp-top .icon svg {
+        width: 45%;
+    }
+
+    .dapp-top h2 {
+        font-size: 30px;
+    }
+
+    .dapp-top p {
+        font-size: 15px;
+    }
+
+    .dapp-images img {
+        width: 150px;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .dapp-images img {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .dapp-top .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .dapp-top .icon svg {
+        width: 45%;
+    }
+
+    .dapp-top h2 {
+        font-size: 20px;
+    }
+
+    .dapp-top p {
+        font-size: 13px;
+    }
+
+    .dapp-card {
+        gap: 10px;
+    }
+
+    .dapp-bottom .text-box h2 {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .dapp-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .dapp-bottom-card {
+        width: 100%;
+    }
+
+    .dapp-bottom .text-box h2 {
+        font-size: 20px;
+    }
+
+    .dapp-bottom .text-box p {
+        font-size: 12px;
+    }
+
+    .dapp-bottom .text-box li {
+        font-size: 13px;
+    }
+
+    .dapp-bottom .text-box li svg {
+        width: 19px;
+        height: 19px;
+    }
+
+    .dapp-images img {
+        width: 80px;
+    }
+}

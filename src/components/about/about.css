@@ -1,0 +1,218 @@
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.about-container img {
+  height: 87%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.about-experience {
+  background-color: #015fc9;
+  position: absolute;
+  bottom: 0%;
+  right: 15%;
+  border-radius: 5px;
+  width: 250px;
+  height: 100px;
+  padding: 10px 26px;
+  color: #fff;
+}
+
+.about-experience h2 {
+  font-family: "Spline Sans", sans-serif !important;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.about-experience p {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.about-component .about-heading {
+  color: #015fc9;
+  font-family: "Spline Sans", sans-serif !important;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.about-desc1 {
+  color: #333;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.about-desc2 {
+  color: #333;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.about-list li {
+  list-style: none;
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.about-award {
+  aspect-ratio: 1/1;
+  border-radius: 15px;
+  border-top: 5px solid #015fc9;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);
+}
+
+.about-award h2 {
+  color: #333;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.about-award h3 {
+  color: #616161;
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .about-award h2 {
+    font-size: 30px;
+    line-height: 25px;
+  }
+
+  .about-award h3 {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .about-component .about-heading {
+    font-size: 30px;
+  }
+
+  .about-desc1 {
+    font-size: 19px;
+  }
+
+  .about-desc2 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .about-list li {
+    font-size: 15px !important;
+    margin-top: 8px;
+  }
+
+  .about-list li svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .about-experience {
+    height: 80px;
+    padding: 5px 26px;
+    color: #fff;
+  }
+
+  .about-experience h2 {
+    font-size: 30px;
+  }
+
+  .about-experience p {
+    font-size: 15px;
+    font-style: normal;
+  }
+
+  .about-container img {
+    height: 90%;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .about-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 501px) {
+  .about-container img {
+    height: 88%;
+  }
+
+  .about-experience {
+    right: 6%;
+    width: 181px;
+    height: 48px;
+    justify-content: center;
+    padding: 0px 18px;
+  }
+
+  .about-experience h2 {
+    font-size: 15px;
+  }
+
+  .about-experience p {
+    font-size: 12px;
+  }
+
+  .about-component .about-heading {
+    font-size: 17px;
+  }
+
+  .about-desc1 {
+    font-size: 20px;
+  }
+
+  .about-desc2 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .about-list li {
+    font-size: 13px;
+  }
+
+  .about-award li svg {
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+  }
+
+
+  .about-award h2 {
+    font-size: 15px;
+  }
+
+  .about-award h3 {
+    font-size: 12px;
+    line-height: normal;
+  }
+}

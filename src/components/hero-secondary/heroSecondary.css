@@ -1,0 +1,50 @@
+.hero-secondary {
+  background-image: url(/public/image/landing.png);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.landing-text-box h1 {
+  font-family: "Spline Sans", sans-serif !important;
+  color: #015fc9;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero-secondary .ellipse {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 60%;
+  bottom: -10%;
+}
+
+
+@media screen and (max-width: 992px) {
+  .hero-secondary .half-circle {
+    width: 50%;
+  }
+
+  .hero-secondary .doted {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .hero-secondary .half-circle {
+    width: 60px !important;
+  }
+
+  
+  .hero-secondary .ellipse {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    left: 24%;
+    bottom: -10%;
+  }
+}

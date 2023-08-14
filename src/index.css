@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  font-family: "Lato", sans-serif !important;
+  margin: 0;
+}
+
+
+
+.btn-primary {
+  background-color: #015fc9;
+  border-radius: 5px;
+  display: inline-flex;
+  padding: 8px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.text-primary {
+  color: #015fc9 !important;
+}
+
+.mobile-view {
+  display: none !important;
+}
+
+.custom-btn {
+  padding: 0.9rem 40px;
+  background-color: #015fc9;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 5px;
+}
+
+.page-heading {
+  color: var(--blue, #015FC9);
+  text-align: center;
+  font-family: "Spline Sans", sans-serif !important;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.page-sub-heading {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 150% */
+  max-width: 890px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+
+@media screen and (max-width: 1081px) {
+  .desktop-view {
+    display: none !important;
+  }
+
+  .mobile-view {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .container {
+    max-width: 1280px !important;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+  .custom-btn {
+    padding: 0.5rem 40px;
+  }
+
+  .page-heading {
+    font-size: 30px;
+  }
+  
+  .page-sub-heading {
+    font-size: 17px;
+    line-height: 25px;
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  
+}
+
+
+@media screen and (max-width: 768px) { 
+  .custom-btn {
+    padding: 0.6rem 18px;
+    font-size: 14px;
+  }
+
+  .page-heading {
+    font-size: 22px;
+  }
+  
+  .page-sub-heading {
+    font-size: 14px;
+    line-height: 22px;
+    width: 80%;
+    margin-bottom: 25px;
+  }
+}
+
+
+@media screen and (max-width: 560px) {
+  .page-heading {
+    font-size: 20px;
+  }
+  
+  .page-sub-heading {
+    font-size: 12px;
+    line-height: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

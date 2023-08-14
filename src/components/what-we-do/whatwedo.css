@@ -1,0 +1,142 @@
+.wwd-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  position: relative;
+}
+
+.wwd-swipwer {
+  margin-top: -5rem;
+}
+
+.custom-progress-bar {
+  width: 163px;
+  border-radius: 5px;
+  height: 5px;
+  background-color: #e2f0ff;
+  z-index: 200;
+  overflow: hidden;
+}
+
+.custom-progress-fill {
+  height: 100%;
+  background-color: #015fc9;
+  width: 0;
+}
+
+
+.wwd-card {
+  border-radius: 15px;
+  background: var(--white, #FFF);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+
+.wwd-card img {
+  height: 350px;
+  object-fit: cover;
+}
+
+.wwd-card div {
+  text-align: center;
+}
+
+.wwd-card h2 {
+  color: var(--black, #333);
+  text-align: center;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.wwd-card p {
+  color: var(--black, #333);
+  text-align: center;
+
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  /* 150% */
+}
+
+.wwd-card button {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 5px;
+  background: var(--blue, #015FC9);
+  color: var(--white, #FFF);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .wwd-card img {
+    height: 300px ;
+  }
+
+  .wwd-card h2 {
+    font-size: 22px;
+  }
+  
+  .wwd-card p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .wwd-card button {
+    padding: 10px 0;
+    font-size: 15px;
+  }
+
+  .wwd-swipwer {
+    margin-top: -1.5rem;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .wwd-card img {
+    height: 160px ;
+  }
+
+  .wwd-card h2 {
+    font-size: 20px;
+  }
+  
+  .wwd-card p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .wwd-card button {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wwd-swipwer {
+    margin-top: 1rem;
+  }
+}
+
+
+
+
+@media screen and (max-width: 501px) {
+  .wwd-card img {
+    height: 239px;
+    margin-bottom: 1rem;
+  }
+
+  .wwd-swipwer {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,166 @@
+.ovb-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.ovb-card {
+    border-radius: 15px;
+    background: #e7efff69;
+    overflow: hidden;
+    height: 600px;
+}
+
+.ovb-card .card-footer {
+    bottom: 20px;
+    width: calc(100% - 50px);
+}
+
+.ovb-card h2 {
+    color: var(--black, #333);
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.ovb-card h4 {
+    color: var(--black, #333);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 150% */
+    margin-top: 10px;
+}
+
+.ovb-card .image-outer{
+    width: 100%;
+    height: 60%;
+}
+
+.ovb-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ovb-mobile {
+    display: none;
+}
+
+.custom-progress-bar {
+    width: 163px;
+    border-radius: 5px;
+    height: 5px;
+    background-color: #e2f0ff;
+    z-index: 200;
+    overflow: hidden;
+  }
+  
+  .custom-progress-fill {
+    height: 100%;
+    background-color: #015fc9;
+    width: 0;
+  }
+  
+
+@media screen and (max-width: 1200px) {
+
+    .ovb-card h2 {
+        font-size: 20px;
+    }
+
+    .ovb-card h4 {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 7px;
+    }
+
+    .ovb-card {
+        border-radius: 15px;
+        background: #e7efff69;
+        overflow: hidden;
+        height: 480px;
+    }
+
+    .ovb-card .image-outer {
+        height: 50%;
+    }
+
+    .ovb-card .card-footer {
+        bottom: 15px;
+        width: calc(100% - 32px);     
+    }
+
+    .card-footer p {
+        font-size: 12px !important;
+    }
+
+    .card-footer svg {
+        width: 25px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .ovb-card h2 {
+        font-size: 18px;
+    }
+
+    .ovb-card h4 {
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 0px;
+    }
+
+    .ovb-card {
+        border-radius: 15px;
+        background: #e7efff69;
+        overflow: hidden;
+        height: 430px;
+    }
+
+    .ovb-card .image-outer {
+        height: 50%;
+    }
+
+    .ovb-card .card-footer {
+        bottom: 15px;
+        width: calc(100% - 16px);     
+    }
+
+    .card-footer p {
+        font-size: 10px !important;
+    }
+
+    .card-footer svg {
+        width: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ovb-desktop {
+        display: none !important;
+    }
+
+    .ovb-mobile {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .ovb-card {
+        border-radius: 15px;
+        background: #e7efff69;
+        overflow: hidden;
+        height: 400px;
+    }
+
+    .ovb-card .image-outer{
+        height: 50% !important;
+    }
+
+}

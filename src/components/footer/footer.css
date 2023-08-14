@@ -1,0 +1,48 @@
+footer {
+  background: #0e0e0e;
+}
+
+footer p,
+footer li {
+  color: #7f7f7f;
+  list-style: none;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  cursor: default;
+  transition: all ease 0.3s;
+}
+
+footer ul p {
+  color: #fff;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.border-top {
+  border-color: rgba(232, 232, 232, 0.3) !important;
+}
+
+.footer-location p:first-child {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.footer-desc {
+  line-height: 23px;
+}
+
+
+@media screen and (max-width: 750px) {
+  .footer-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
